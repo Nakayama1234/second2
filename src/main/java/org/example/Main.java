@@ -7,12 +7,12 @@ import java.util.List;
 // Enter キーを押します。これでコードに空白文字が表示されます。
 public class Main {
     public static void main(String[] args) {
-        List<String> menbers = List.of("rufi", "tanjirou", "naruto");
-        List<String> menberList = menbers.stream().sorted(Comparator.reverseOrder()).map(String::toUpperCase).toList();
-        System.out.println(menberList);
+        List<String> menbersNameSet = List.of("rufi", "tanjirou", "naruto");
+        List<String> sortedreversOrderMap = menbersNameSet.stream().sorted(Comparator.reverseOrder()).map(String::toUpperCase).toList();
+        System.out.println(sortedreversOrderMap);
 
-        boolean menberList2 = menbers.stream().noneMatch(menber -> menber.equals("麦わらの一味"));
-        System.out.println(menberList2);
+        boolean isEmpty = menbersNameSet.stream().noneMatch(menber -> menber.equals("麦わらの一味"));
+        System.out.println(isEmpty);
     }
 }
 
