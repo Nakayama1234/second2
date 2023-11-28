@@ -7,7 +7,7 @@ import java.util.List;
 // Enter キーを押します。これでコードに空白文字が表示されます。
 public class Main {
     public static void main(String[] args) {
-        List<String> menbersNameSet = List.of("rufi", "tanjirou", "naruto");
+        List<String> menbersNameSet = List.of("rufie", "tanjirou", "naruto","songoku");
         List<String> sortedreversOrderMap = menbersNameSet.stream().sorted(Comparator.reverseOrder()).map(String::toUpperCase).toList();
         System.out.println(sortedreversOrderMap);
 
